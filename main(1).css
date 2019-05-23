@@ -1,0 +1,35 @@
+body {
+    -moz-animation-duration: 3s;
+    -moz-animation-name: bkchange;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+     -webkit-animation-duration: 3s;
+    -webkit-animation-name: bkchange;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  @-moz-keyframes bkchange {
+    from {
+      background: rgb(170, 28, 151);
+    }
+
+    to {
+      background:rgb(17, 164, 190);
+    }
+  }
+  @-webkit-keyframes bkchange {
+    from {
+      background: rgb(189, 17, 68);
+    }
+
+    to {
+      background:rgb(14, 129, 24);
+    }
+  }
+  .ho{
+    padding: 15px;
+    border: rgb(196, 31, 31) 5px solid;
+    background: rgb(123, 255, 0);
+    margin: 350px 630px;
+  }

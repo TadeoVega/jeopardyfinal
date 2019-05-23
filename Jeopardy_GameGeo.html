@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeopardy!!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Press+Start+2P" rel="stylesheet">
+	<script src="contador.js"></script>
+
+</head>
+<body >
+	<div>
+		<div>
+			<table>
+				<tr>
+					<th>TEMA 1</th>
+					<th>TEMA 2</th>
+					<th>TEMA 3</th>
+					<th>TEMA 4</th>
+					<th>TEMA 5</th>
+				</tr>
+				<tr>
+					<td><button id="AP1" class="AP1"><h1>$200</h1></button></td>
+					<td><button id="AP2" class="AP1"><h1>$200</h1></button></td>
+					<td><button id="AP3" class="AP1"><h1>$200</h1></button></td>
+					<td><button id="AP4" class="AP1"><h1>$200</h1></button></td>
+					<td><button id="AP5" class="AP1"><h1>$200</h1></button></td>
+				</tr>
+				<tr>
+					<td><button id="AP6" class="AP1"><h1>$400</h1></button></td>
+					<td><button id="AP7" class="AP1"><h1>$400</h1></button></td>
+					<td><button id="AP8" class="AP1"><h1>$400</h1></button></td>
+					<td><button id="AP9" class="AP1"><h1>$400</h1></button></td>
+					<td><button id="AP10" class="AP1"><h1>$400</h1></button></td>
+				</tr>
+				<tr>
+					<td><button id="AP11" class="AP1"><h1>$600</h1></button></td>
+					<td><button id="AP12" class="AP1"><h1>$600</h1></button></td>
+					<td><button id="AP13" class="AP1"><h1>$600</h1></button></td>
+					<td><button id="AP14" class="AP1"><h1>$600</h1></button></td>
+					<td><button id="AP15" class="AP1"><h1>$600</h1></button></td>
+				</tr>
+				<tr>
+					<td><button id="AP16" class="AP1"><h1>$800</h1></button></td>
+					<td><button id="AP17" class="AP1"><h1>$800</h1></button></td>
+					<td><button id="AP18" class="AP1"><h1>$800</h1></button></td>
+					<td><button id="AP19" class="AP1"><h1>$800</h1></button></td>
+					<td><button id="AP20" class="AP1"><h1>$800</h1></button></td>
+				</tr>
+				<tr>
+					<td><button id="AP21" class="AP1"><h1>$1000</h1></button></td>
+					<td><button id="AP22" class="AP1"><h1>$1000</h1></button></td>
+					<td><button id="AP23" class="AP1"><h1>$1000</h1></button></td>
+					<td><button id="AP24" class="AP1"><h1>$1000</h1></button></td>
+					<td><button id="AP25" class="AP1"><h1>$1000</h1></button></td>
+				</tr>
+			</table>
+		</div>
+		<div class="PO1" id="PO1">
+			<div class="P1" id="P1">
+				<a href="#" id="CP1" class="CP1">X</a>
+				<h3>PREGUNTA 1</h3>
+				<h5>1-. Filósofo griego de la antigüedad, fundador de una escuela dedicada a la filosofía y matemáticas.</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" type="button" name="RP1" value="a) Pitágoras" onclick="Ent_Cont()"><br>
+					<input class="Ans resp-incorrecta" type="button" name="RP1" value="b) Tales de Mileto" onclick="Ent_Cont_Rest1()"><br>
+					<input class="Ans resp-incorrecta" type="button" name="RP1" value="c) Euclides" onclick="Ent_Cont_Rest1()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO2" id="PO2">
+			<div class="P2" id="P2">
+				<a href="#" id="CP2" class="CP2">X</a>
+				<h3>PREGUNTA 2</h3>
+				<h5>2-. ¿Cómo se clasifican los triángulos según sus ángulos?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" type="button"  id="uno" name="RP1" value="a)	rectángulo, isósceles y acutángulo" onclick="Ent_Cont_Rest1()"><br>
+					<input  class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	rectángulo, acutángulo y obtusángulo" onclick="Ent_Cont()"> <!--Respuesta correcta--> <br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	rectángulo, isósceles y acutángulo " onclick="Ent_Cont_Rest1()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO3" id="PO3">
+			<div class="P3" id="P3">
+				<a href="#" id="CP3" class="CP3">X</a>
+				<h3>PREGUNTA 3</h3>
+				<h5>3-. ¿Cuáles son o elementos de la pirámide?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" type="button" name="RP1" value="a)	arista, diagonales, base y vértice" onclick="Ent_Cont_Rest1()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	base, ángulos entrantes, base triangular, arista" onclick="Ent_Cont_Rest1()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)	cúspide, arista, vértice, base" onclick="Ent_Cont()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO4" id="PO4">
+			<div class="P4" id="P4">
+				<a href="#" id="CP4" class="CP4">X</a>
+				<h3>PREGUNTA 4</h3>
+				<h5>4-. Los polígonos según sus ángulos se clasifican en:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	polígono regular e irregular" onclick="Ent_Cont()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	polígono regular y convexo" onclick="Ent_Cont_Rest1()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	polígono convexo y cóncavo" onclick="Ent_Cont_Rest1()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO5" id="PO5">
+			<div class="P5" id="P5">
+				<a href="#" id="CP5" class="CP5">X</a>
+				<h3>PREGUNTA 5</h3>
+				<h5>5-.Un polígono de 20 lados se llama:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	icosagono" onclick="Ent_Cont2()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	eneágono" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	dodecágono" onclick="Ent_Cont_Rest2()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO6" id="PO6">
+			<div class="P6" id="P6">
+				<a href="#" id="CP6" class="CP6">X</a>
+				<h3>PREGUNTA 6</h3>
+				<h5>6-.Los triángulos se clasifican por:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	la medida de sus ángulos exteriores y segmentos" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	la medida de sus ángulos interiores y medida de sus lados" onclick="Ent_Cont2()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	ninguna de las anteriores  " onclick="Ent_Cont_Rest2()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO7" id="PO7">
+			<div class="P7" id="P7">
+				<a href="#" id="CP7" class="CP7">X</a>
+				<h3>PREGUNTA 7</h3>
+				<h5>7-.El teorema de la semejanza de triángulos se le atribuye a:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Pitágoras" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Tales de Mileto" onclick="Ent_Cont2()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Euclides" onclick="Ent_Cont_Rest2()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO8" id="PO8">
+			<div class="P8" id="P8">
+				<a href="#" id="CP8" class="CP8">X</a>
+				<h3>PREGUNTA 8</h3>
+				<h5>8-.Como se llaman los ángulos que son mayor de 90º y menor de 18º</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Angulo llano" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Angulo perigonio" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)	Angulo obtuso" onclick="Ent_Cont2()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO9" id="PO9">
+			<div class="P9" id="P9">
+				<a href="#" id="CP9" class="CP9">X</a>
+				<h3>PREGUNTA 9</h3>
+				<h5>9-.¿Por qué se les conoce como ángulos complementarios?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	Porque son aquellos que suman sus medidas" onclick="Ent_Cont2()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Porque son opuestos entre si" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Son opuestos por el vértice" onclick="Ent_Cont_Rest2()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO10" id="PO10">
+			<div class="P10" id="P10">
+				<a href="#" id="CP10" class="CP10">X</a>
+				<h3>PREGUNTA 10</h3>
+				<h5>10-. ¿Cuáles son las características de un Angulo?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Lado(r), lado (s), Vértice" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Angulo y lados (r)(s)" onclick="Ent_Cont_Rest2()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)	Todas las anteriores" onclick="Ent_Cont2()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO11" id="PO11">
+			<div class="P11" id="P11">
+				<a href="#" id="CP11" class="CP11">X</a>
+				<h3>PREGUNTA 11</h3>
+				<h5>11-.¿Qué elementos conforman la circunferencia?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Vértice, arco y diagonal" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Tangente, arco, cuerda, radio, diámetro y secante" onclick="Ent_Cont3()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Ninguna de las anteriores " onclick="Ent_Cont_Rest3()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO12" id="PO12">
+			<div class="P12" id="P12">
+				<a href="#" id="CP12" class="CP12">X</a>
+				<h3>PREGUNTA 12</h3>
+				<h5>12-.¿Cómo se clasifican los poliedros?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Por el tamaño de su cara y base" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b) Por el número de vértices y aristas" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c) Por regulares e irregulares" onclick="Ent_Cont3()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO13" id="PO13">
+			<div class="P13" id="P13">
+				<a href="#" id="CP13" class="CP13">X</a>
+				<h3>PREGUNTA 13</h3>
+				<h5>13-. ¿Cuáles son los ángulos suplementarios?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Los que al sumarse dan 360º" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Los que al sumarse dan 180ª" onclick="Ent_Cont3()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Los que al sumarse dan 200º" onclick="Ent_Cont_Rest3()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO14" id="PO14">
+			<div class="P14" id="P14">
+				<a href="#" id="CP14" class="CP14">X</a>
+				<h3>PREGUNTA 14</h3>
+				<h5>14-. ¿Cuál es el significado de ángulo?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	Porción indefinida de plano limitada por dos líneas que parten de un mismo punto o por dos planos que parten de una misma línea y cuya abertura puede medirse en grados." onclick="Ent_Cont3()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	líneas que se intersectan entre si" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	líneas paralelas que se unen en un mismo vértice formando una curva " onclick="Ent_Cont_Rest3()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO15" id="PO15">
+			<div class="P15" id="P15">
+				<a href="#" id="CP15" class="CP15">X</a>
+				<h3>PREGUNTA 15</h3>
+				<h5>15-. ¿Quiénes descubrieron los ángulos?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Los egipcios basándose en las sombras" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Los romanos tomando en cuenta lo propuesto por egipcios" onclick="Ent_Cont_Rest3()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)	Los babilónicos inventaron los ángulos como una numeración de mayor o menor" onclick="Ent_Cont3()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO16" id="PO16">
+			<div class="P16" id="P16">
+				<a href="#" id="CP16" class="CP16">X</a>
+				<h3>PREGUNTA 16</h3>
+				<h5>16-. ¿Cuál es la fórmula para calcular el área de la circunferencia??</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	L.L" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	(b.h) /2" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)  π. r2 " onclick="Ent_Cont4()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO17" id="PO17">
+			<div class="P17" id="P17">
+				<a href="#" id="CP17" class="CP17">X</a>
+				<h3>PREGUNTA 17</h3>
+				<h5>17-. ¿Quién invento la circunferencia?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a) Pitágoras, al dibujar un cuadrado con una vara" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b) René Descartes, al asignarles valores a los puntos externos de un círculo" onclick="Ent_Cont4()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c) Ninguna de las anteriores" onclick="Ent_Cont_Rest4()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO18" id="PO18">
+			<div class="P18" id="P18">
+				<a href="#" id="CP18" class="CP18">X</a>
+				<h3>PREGUNTA 18</h3>
+				<h5>18-. ¿Cómo se le llama al triangulo de un ángulo de 90º?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Escaleno" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Rectángulo" onclick="Ent_Cont4()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Acutángulo " onclick="Ent_Cont_Rest4()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO19" id="PO19">
+			<div class="P19" id="P19">
+				<a href="#" id="CP19" class="CP19">X</a>
+				<h3>PREGUNTA 19</h3>
+				<h5>19-. ¿el lado más largo de un rectángulo es?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	Hipotenusa" onclick="Ent_Cont4()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Bisectriz" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Incentro" onclick="Ent_Cont_Rest4()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO20" id="PO20">
+			<div class="P20" id="P20">
+				<a href="#" id="CP20" class="CP20">X</a>
+				<h3>PREGUNTA 20</h3>
+				<h5>20-. Es la línea que divide el ángulo a la mitad</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Mediatriz" onclick="Ent_Cont_Rest4()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Bisectriz" onclick="Ent_Cont4()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Diagonal" onclick="Ent_Cont_Rest4()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO21" id="PO21">
+			<div class="P21" id="P21">
+				<a href="#" id="CP21" class="CP21">X</a>
+				<h3>PREGUNTA 21</h3>
+				<h5>21-. Menciona cuales son los puntos notables del triángulo:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a) altura, mediana, mediatrices y bisectrices " onclick="Ent_Cont5()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	altura, mediana, mediatrices y bisectrices" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	ninguna de las mencionadas" onclick="Ent_Cont_Rest5()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO22" id="PO22">
+			<div class="P22" id="P22">
+				<a href="#" id="CP22" class="CP22">X</a>
+				<h3>PREGUNTA 22</h3>
+				<h5>22-. Dos triángulos son iguales si tienen dos lados iguales y también el ángulo que forman entre ambos:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	Verdadero" onclick="Ent_Cont5()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Respuesta indeterminada" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Falso" onclick="Ent_Cont_Rest5()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO23" id="PO23">
+			<div class="P23" id="P23">
+				<a href="#" id="CP23" class="CP23">X</a>
+				<h3>PREGUNTA 23</h3>
+				<h5>23-. Dos triángulos son semejantes si tienen un ángulo igual y los lados que forman son proporcionales:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Respuesta indeterminada" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Falso" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="c)	Verdadero" onclick="Ent_Cont5()"><!--Respuesta correcta-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO24" id="PO24">
+			<div class="P24" id="P24">
+				<a href="#" id="CP24" class="CP24">X</a>
+				<h3>PREGUNTA 24</h3>
+				<h5>24-. Dos triángulos son iguales si tienen los dos lados iguales:</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="a)	Verdadero" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="b)	Falso" onclick="Ent_Cont5()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Respuesta indeterminada" onclick="Ent_Cont_Rest5()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="PO25" id="PO25">
+			<div class="P25" id="P25">
+				<a href="#" id="CP25" class="CP25">X</a>
+				<h3>PREGUNTA 25</h3>
+				<h5>25-. ¿Qué es la diagonal de un polígono?</h5>
+				<form action="" method="post">
+					<div class="CAns">
+					<input class="Ans resp-correcta" id="" type="button" name="RP1" value="a)	Es el segmento que une dos vértices que no son consecutivos" onclick="Ent_Cont5()"><!--Respuesta correcta--><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="b)	Es la línea poligonal que lo limita" onclick="Ent_Cont_Rest5()"><br>
+					<input class="Ans resp-incorrecta" id="" type="button" name="RP1" value="c)	Puntos donde se unen dos lados consecutivos del polígono" onclick="Ent_Cont_Rest5()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="correcto-fondo">
+			<div class="correcto-contenedor">
+				<img src="1.gif" alt="gif correcto">
+			</div>
+		</div>
+		<div class="incorrecto-fondo">
+			<div class="incorrecto-contenedor">
+				<img src="2.gif" alt="gif incorrecto">
+			</div>
+		</div>
+	</div>
+		<div><form action="mix.php" method="POST">
+			<p  style="font-family:'Press Start 2P', cursive; font-size: 30px; text-align: center;">	Puntos: <input class="atras" type="text" name="puntos" readonly="readonly" size="1" value="0" id="impr" style="border-color: black; ;background: transparent;" ></p>
+			&nbsp; <span  id="Dice"></span><br><p style="font-family:'Press Start 2P', cursive; font-size: 30px; text-align: center;">	
+		Nombre:<input class="atras" type="text" size="3" name="nombre" style="border-color: black; ;background: transparent;"placeholder="nombre"> <input type="submit" size="5" value="Finalizar"></p>
+	</form></div>
+	<script src="scrips.js"></script>
+</body>
+</html>

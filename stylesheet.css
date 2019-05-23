@@ -1,0 +1,1940 @@
+body {
+	animation: bgcolor infinite 20s;
+}
+@keyframes bgcolor{
+	0%
+	{
+	  background: #8158fc;
+	}
+	20%
+	{
+	  background: #df0054;
+	}
+	40%
+	{
+	  background: #00bd56;
+	}
+	60%
+	{
+	  background: #fcd307;
+	}
+	80%
+	{
+	  background: #f857b5;
+	}
+	100%
+	{
+	  background: #00a8b5;
+	}
+  }
+*{
+	font-family:'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	font-size: 50px;
+}
+table{
+	padding: 10px;
+	transition: .3s ease all;
+	width: 100%;
+}
+
+th {
+	font-family:'Press Start 2P', cursive;
+	color: #1d1919;
+	font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+	th {
+		font-size: 8px;
+	}
+	.AP1 > h1 {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+	th {
+		font-size: 10px;
+	}
+	.AP1 > h1 {
+		font-size: 40px;
+	}
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+	th {
+		font-size: 16px;
+	}
+	.AP1 > h1 {
+		font-size: 50px;
+	}
+}
+
+th {
+	padding: 20px 0px;
+	height: 100%;
+	border: solid white 5px;
+	color: white;
+	background: #232931;
+	border-radius: 05%;
+	font-family:'Press Start 2P', cursive;
+	transition: .3s ease all;
+}
+h1 {
+	font-size: 80px;
+}
+h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+h5 {
+	font-size: 26px;
+	font-weight: 300;
+	margin: 10px;
+	opacity: 0;
+}
+
+.Ans{
+	padding: 0 20px;
+	height: 40px;
+	width: 80%;
+	line-height: 40px;
+	border: none;
+	color: black;
+	background: #FFF;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+.Ans:hover{
+	color: white;
+	background: #232931;
+}
+.IMGDIN{
+	height: 100%;
+	width: 100%;}
+.clasesinningunsentido{/*ESTA CLASE ESTA HECHA PARA COMPRIMIR TODOS LO BOTONES DE OPCION*/}
+	/*P1*/
+	.AP1{
+		padding: 20px;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 5%;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP1:hover{
+		background: none;
+	}
+	.PO1{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO1.active{
+		visibility: visible;
+	}
+	.P1{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P1.active{
+		visibility: visible;
+	}
+	.CP1{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP1:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani1*/
+	.P1.active{	transform: scale(1); opacity: 1; }
+	.P1.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P1.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P1.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P2*/
+	.AP2{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP2:hover{
+		background: none;
+	}
+	.PO2{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO2.active{
+		visibility: visible;
+	}
+	.P2{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P2.active{
+		visibility: visible;
+	}
+	.CP2{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP2:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani2*/
+	.P2.active{	transform: scale(1); opacity: 1; }
+	.P2.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P2.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P2.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P3*/
+	.AP3{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP3:hover{
+		background: none;
+	}
+	.PO3{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO3.active{
+		visibility: visible;
+	}
+	.P3{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P3.active{
+		visibility: visible;
+	}
+	.CP3{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP3:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani3*/
+	.P3.active{	transform: scale(1); opacity: 1; }
+	.P3.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P3.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P3.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P4*/
+	.AP4{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP4:hover{
+		background: none;
+	}
+	.PO4{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO4.active{
+		visibility: visible;
+	}
+	.P4{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P4.active{
+		visibility: visible;
+	}
+	.CP4{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP4:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani4*/
+	.P4.active{	transform: scale(1); opacity: 1; }
+	.P4.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P4.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P4.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P5*/
+	.AP5{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP5:hover{
+		background: none;
+	}
+	.PO5{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO5.active{
+		visibility: visible;
+	}
+	.P5{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P5.active{
+		visibility: visible;
+	}
+	.CP5{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP5:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani5*/
+	.P5.active{	transform: scale(1); opacity: 1; }
+	.P5.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P5.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P5.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P6*/
+	.AP6{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP6:hover{
+		background: none;
+	}
+	.PO6{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO6.active{
+		visibility: visible;
+	}
+	.P6{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P6.active{
+		visibility: visible;
+	}
+	.CP6{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP6:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani6*/
+	.P6.active{	transform: scale(1); opacity: 1; }
+	.P6.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P6.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P6.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P7*/
+	.AP7{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP7:hover{
+		background: none;
+	}
+	.PO7{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO7.active{
+		visibility: visible;
+	}
+	.P7{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P7.active{
+		visibility: visible;
+	}
+	.CP7{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP7:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani7*/
+	.P7.active{	transform: scale(1); opacity: 1; }
+	.P7.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P7.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P7.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P8*/
+	.AP8{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP8:hover{
+		background: none;
+	}
+	.PO8{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO8.active{
+		visibility: visible;
+	}
+	.P8{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P8.active{
+		visibility: visible;
+	}
+	.CP8{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP8:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani8*/
+	.P8.active{	transform: scale(1); opacity: 1; }
+	.P8.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P8.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P8.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P9*/
+	.AP9{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP9:hover{
+		background: none;
+	}
+	.PO9{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO9.active{
+		visibility: visible;
+	}
+	.P9{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P9.active{
+		visibility: visible;
+	}
+	.CP9{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP9:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani9*/
+	.P9.active{	transform: scale(1); opacity: 1; }
+	.P9.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P9.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P9.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P10*/
+	.AP10{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP10:hover{
+		background: none;
+	}
+	.PO10{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO10.active{
+		visibility: visible;
+	}
+	.P10{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P10.active{
+		visibility: visible;
+	}
+	.CP10{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP10:hover {
+		color: #000;
+	}
+	.CAns10{
+		opacity: 0;
+	}
+	/*Ani10*/
+	.P10.active{	transform: scale(1); opacity: 1; }
+	.P10.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P10.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P10.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P11*/
+	.AP11{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP11:hover{
+		background: none;
+	}
+	.PO11{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO11.active{
+		visibility: visible;
+	}
+	.P11{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P11.active{
+		visibility: visible;
+	}
+	.CP11{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP11:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani11*/
+	.P11.active{	transform: scale(1); opacity: 1; }
+	.P11.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P11.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P11.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P12*/
+	.AP12{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP12:hover{
+		background: none;
+	}
+	.PO12{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO12.active{
+		visibility: visible;
+	}
+	.P12{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P12.active{
+		visibility: visible;
+	}
+	.CP12{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP12:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani12*/
+	.P12.active{	transform: scale(1); opacity: 1; }
+	.P12.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P12.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P12.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P13*/
+	.AP13{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP13:hover{
+		background: none;
+	}
+	.PO13{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO13.active{
+		visibility: visible;
+	}
+	.P13{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P13.active{
+		visibility: visible;
+	}
+	.CP13{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP13:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani13*/
+	.P13.active{	transform: scale(1); opacity: 1; }
+	.P13.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P13.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P13.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P14*/
+	.AP14{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP14:hover{
+		background: none;
+	}
+	.PO14{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO14.active{
+		visibility: visible;
+	}
+	.P14{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P14.active{
+		visibility: visible;
+	}
+	.CP14{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP14:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani14*/
+	.P14.active{	transform: scale(1); opacity: 1; }
+	.P14.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P14.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P14.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P15*/
+	.AP15{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP15:hover{
+		background: none;
+	}
+	.PO15{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO15.active{
+		visibility: visible;
+	}
+	.P15{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P15.active{
+		visibility: visible;
+	}
+	.CP15{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP15:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani15*/
+	.P15.active{	transform: scale(1); opacity: 1; }
+	.P15.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P15.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P15.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P16*/
+	.AP16{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP16:hover{
+		background: none;
+	}
+	.PO16{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO16.active{
+		visibility: visible;
+	}
+	.P16{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P16.active{
+		visibility: visible;
+	}
+	.CP16{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP16:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani16*/
+	.P16.active{	transform: scale(1); opacity: 1; }
+	.P16.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P16.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P16.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P17*/
+	.AP17{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP17:hover{
+		background: none;
+	}
+	.PO17{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO17.active{
+		visibility: visible;
+	}
+	.P17{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P17.active{
+		visibility: visible;
+	}
+	.CP17{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP17:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani17*/
+	.P17.active{	transform: scale(1); opacity: 1; }
+	.P17.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P17.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P17.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P18*/
+	.AP18{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP18:hover{
+		background: none;
+	}
+	.PO18{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO18.active{
+		visibility: visible;
+	}
+	.P18{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P18.active{
+		visibility: visible;
+	}
+	.CP18{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP18:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani18*/
+	.P18.active{	transform: scale(1); opacity: 1; }
+	.P18.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P18.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P18.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P19*/
+	.AP19{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP19:hover{
+		background: none;
+	}
+	.PO19{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO19.active{
+		visibility: visible;
+	}
+	.P19{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P19.active{
+		visibility: visible;
+	}
+	.CP19{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP19:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani19*/
+	.P19.active{	transform: scale(1); opacity: 1; }
+	.P19.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P19.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P19.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P20*/
+	.AP20{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP20:hover{
+		background: none;
+	}
+	.PO20{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO20.active{
+		visibility: visible;
+	}
+	.P20{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P20.active{
+		visibility: visible;
+	}
+	.CP20{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP20:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani20*/
+	.P20.active{	transform: scale(1); opacity: 1; }
+	.P20.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P20.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P20.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P21*/
+	.AP21{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP21:hover{
+		background: none;
+	}
+	.PO21{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO21.active{
+		visibility: visible;
+	}
+	.P21{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P21.active{
+		visibility: visible;
+	}
+	.CP21{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP21:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani21*/
+	.P21.active{	transform: scale(1); opacity: 1; }
+	.P21.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P21.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P21.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P22*/
+	.AP22{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP22:hover{
+		background: none;
+	}
+	.PO22{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO22.active{
+		visibility: visible;
+	}
+	.P22{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P22.active{
+		visibility: visible;
+	}
+	.CP22{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP22:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani22*/
+	.P22.active{	transform: scale(1); opacity: 1; }
+	.P22.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P22.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P22.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P23*/
+	.AP23{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP23:hover{
+		background: none;
+	}
+	.PO23{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO23.active{
+		visibility: visible;
+	}
+	.P23{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P23.active{
+		visibility: visible;
+	}
+	.CP23{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP23:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani23*/
+	.P23.active{	transform: scale(1); opacity: 1; }
+	.P23.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P23.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P23.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P24*/
+	.AP24{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP24:hover{
+		background: none;
+	}
+	.PO24{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO24.active{
+		visibility: visible;
+	}
+	.P24{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P24.active{
+		visibility: visible;
+	}
+	.CP24{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP24:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani24*/
+	.P24.active{	transform: scale(1); opacity: 1; }
+	.P24.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P24.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P24.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+	/*P25*/
+	.AP25{
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border: solid black 5px;
+		color: #1d1919;
+		background: #eeeeee;
+		border-radius: 05%;
+		font-size: 80px;
+		cursor: pointer;
+		transition: .3s ease all;
+	}
+	.AP25:hover{
+		background: none;
+	}
+	.PO25{
+		background: rgba(0,0,0,.3);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		visibility: hidden;
+	}
+	.PO25.active{
+		visibility: visible;
+	}
+	.P25{
+		background: #eeeeee;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+		border-radius: 3px;
+		font-family: 'Montserrat', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 50%;
+		opacity: 0;
+		scale: .7;
+	}
+	.P25.active{
+		visibility: visible;
+	}
+	.CP25{
+		font-size: 20px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		transition: .3s ease all;
+		color: #BBBBBB;
+		text-decoration: none;
+	}
+
+	.CP25:hover {
+		color: #000;
+	}
+	.CAns{
+		opacity: 0;
+	}
+	/*Ani25*/
+	.P25.active{	transform: scale(1); opacity: 1; }
+	.P25.active h3{ animation: entradaTitulo .8s ease .5s forwards; }
+	.P25.active h5 { animation: entradaSubtitulo .8s ease .5s forwards; }
+	.P25.active .CAns{ animation: entradaInputs 1s linear .5s forwards; }
+
+/*animaciones universales*/
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+/*POP UP respuesta correcta*/
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+.correcto-fondo{
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+
+}
+.correcto-fondo.active{
+	visibility: visible;
+}
+.correcto-contenedor{
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 50%;
+	scale: .7;
+}
+.correcto-contenedor.active{
+	visibility: visible;
+}
+/* Imagen 2 gif*/
+.incorrecto-fondo{
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+
+}
+.incorrecto-fondo.active{
+	visibility: visible;
+}
+.incorrecto-contenedor{
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 50%;
+	scale: .7;
+}
+.incorrecto-contenedor.active{
+	visibility: visible;
+}
+
+button:disabled {
+	color: gray;
+	border-color: gray;
+	cursor: not-allowed;
+	background-color: #eee !important;
+}
+.atras
+{
+    display: block;
+  width: 100%;
+  padding-top: $width/15;
+  border: none;
+}
