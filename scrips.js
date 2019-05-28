@@ -405,6 +405,9 @@ document.querySelectorAll('input[type=button].resp-correcta').forEach(function (
 		popUp.classList.add('active');
 		setTimeout(function () {
 			popUp.classList.remove('active');
+			document.querySelectorAll('div[class^="P"]').forEach(element => {
+				element.classList.remove('active')
+			});
 		}, 2000);
 	})
 })
@@ -414,6 +417,9 @@ document.querySelectorAll('input[type=button].resp-incorrecta').forEach(function
 		popUp.classList.add('active');
 		setTimeout(function () {
 			popUp.classList.remove('active');
+			document.querySelectorAll('div[class^="P"]').forEach(element => {
+				element.classList.remove('active')
+			});
 		}, 2000);
 	})
 })
