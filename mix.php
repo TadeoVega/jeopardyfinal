@@ -1,7 +1,7 @@
 <?php
 	$name= $_POST['nombre'];
 	$puntos= $_POST['puntos'];
-	$mysql=mysqli_connect('vegazweb.com', 'bucketde_user', 'qwerty12345678', 'usuarios');
+	$mysql=mysqli_connect('localhost', 'id9691927_root', 'qwerty12345678', 'id9691927_usuarios');
 	mysqli_query($mysql, "INSERT INTO `mix` (`Nombre`, `Punt`) VALUES ('$name', '$puntos')");
 	$ej_sen=mysqli_query($mysql, 'SELECT * FROM `mix` ORDER BY `mix`.`Punt` DESC');
 	$L_usu=mysqli_fetch_array($ej_sen);
